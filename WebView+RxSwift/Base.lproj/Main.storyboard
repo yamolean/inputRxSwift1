@@ -23,16 +23,26 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eua-2o-6PX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="bTD-zM-N42" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5uj-79-8Zd"/>
                             <constraint firstItem="bTD-zM-N42" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KPh-Q1-E0y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bTD-zM-N42" secondAttribute="bottom" id="MKw-fR-Ljb"/>
+                            <constraint firstAttribute="trailing" secondItem="eua-2o-6PX" secondAttribute="trailing" id="UAe-SK-RVF"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bTD-zM-N42" secondAttribute="trailing" id="Wxo-1U-1vB"/>
+                            <constraint firstItem="eua-2o-6PX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Y59-pJ-ZXr"/>
+                            <constraint firstItem="eua-2o-6PX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="asW-Wa-7YN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="progressView" destination="eua-2o-6PX" id="F5m-nt-0Mx"/>
+                        <outlet property="webView" destination="bTD-zM-N42" id="GxX-lb-pCx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
